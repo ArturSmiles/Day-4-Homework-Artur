@@ -46,7 +46,7 @@ number is greater than 19.
 const crazyDiff = (x) =>{
     let result
     result = x - 19
-    if(result > 19){
+    if(x > 19){
         result = result * 3
     }else{
         result = result
@@ -54,7 +54,7 @@ const crazyDiff = (x) =>{
     return result
 }
 
-console.log(crazyDiff(19))
+console.log(crazyDiff(20))
 /* EXERCISE 4
 Write a function "boundary" which accept an integer N and returns true if N is within 20 and 100 (included) or equal to 400.
 */
@@ -129,7 +129,7 @@ const upperFirst = (x) => {
     return splitString.join(" ")
 
 }
-console.log(upperFirst("hello there strivers this code works very nice"))
+console.log(upperFirst("hello there"))
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
