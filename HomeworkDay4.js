@@ -73,8 +73,18 @@ console.log(boundary(10))
 Write a function "strivify" which accepts a string S. Add to S "Strive" in front of a given string, if the given string begins with "Strive" then return the original string.
 */
 
-/* WRITE YOUR CODE HERE */
+const strivify = (x) =>{
+let S = "Strive " + x
+let result
+if(x.startsWith("Strive")){
+    result = x  
+}else {
+    result = S
+}
+return result
+}
 
+console.log(strivify("Hello There!"))
 /* EXERCISE 6
 Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
 HINT: Module Operator
