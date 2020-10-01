@@ -110,7 +110,6 @@ Write a function "reverseString" to reverse programmatically a given string (es.
 const reverseString = (x) => {
 
     let arrayOfString = x.split("")
-
     let reverseArray = arrayOfString.reverse()
     let joinedArray = reverseArray.join("")
     return joinedArray
@@ -121,13 +120,23 @@ console.log(reverseString("Hello"))
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as parameter
 */
 
-/* WRITE YOUR CODE HERE */
+const upperFirst = (x) => {
+    let splitString = x.toLowerCase().split(" ")
 
+    for(let i = 0; i < splitString.length; i++) {
+        splitString[i] = splitString[i].charAt(0).toUpperCase() + splitString[i].substring(1);
+    }
+    return splitString.join(" ")
+
+}
+console.log(upperFirst("hello there strivers this code works very nice"))
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
 
-/* WRITE YOUR CODE HERE */
+const cutString = (x) => {
+    
+}
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10
