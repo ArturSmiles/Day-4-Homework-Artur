@@ -90,13 +90,23 @@ Write a function "check3and7" which accepts a positive number and check if it is
 HINT: Module Operator
 */
 
-/* WRITE YOUR CODE HERE */
+const check3and7 = (x) => {
+    let result
+    if(x % 3 === 0){
+        result = "The number is a multiple of 3"
+    } else if(x % 7 === 0){
+        result = "The number is a multiple of 7"
+    } else {
+        result = "The Number is neither a multiple of 3 or 7"
+    }
+    return result
+}
+console.log(check3and7(8))
 
 /* EXERCISE 7
 Write a function "reverseString" to reverse programmatically a given string (es.: Strive => evirtS).
 */
 
-/* WRITE YOUR CODE HERE */
 
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as parameter
