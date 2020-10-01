@@ -43,6 +43,18 @@ the specified
 number is greater than 19.
 */
 
+const crazyDiff = (x) =>{
+    let result
+    result = x - 19
+    if(result > 19){
+        result = result * 3
+    }else{
+        result = result
+    }
+    return result
+}
+
+console.log(crazyDiff(19))
 /* EXERCISE 4
 Write a function "boundary" which accept an integer N and returns true if N is within 20 and 100 (included) or equal to 400.
 */
