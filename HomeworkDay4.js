@@ -135,8 +135,11 @@ Write a function "cutString" to create a new string without the first and last c
 */
 
 const cutString = (x) => {
-    
+    result = x.slice(1, -1)
+    return result
+
 }
+console.log(cutString("Hello"))
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10
